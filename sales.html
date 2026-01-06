@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>sales</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body data-barba="wrapper">
+  <nav class="chapters">
+    <a href="/">Home</a>
+    <a href="/projects.html">Projects</a>
+    <a href="/about.html">About</a>
+    <a href="/summary.html">Summary</a>
+    <a href="/quotes.html">Quotes</a>
+    <a href="/sales.html">Sales</a>
+    <a href="/music.html">Music</a>
+  </nav>
+
+  <main data-barba="container" data-barba-namespace="sales">
+    <section class="sales-wrapper">
+      <h1 class="fx-text">sales and deals summary</h1>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-number" data-value="5526" data-money="true">0</span>
+          <span class="stat-label">total value of all my deals (in usd)</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-value="2">0</span>
+          <span class="stat-label">sponsored servers</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-value="112">0</span>
+          <span class="stat-label">total deals</span>
+        </div>
+      </div>
+
+      <p class="stat-note">combined across all servers and platforms.</p>
+
+      <h2>sponsored servers</h2>
+      <div class="stats-grid">
+        <a href="https://discord.gg/yukkis" target="_blank" class="stat-card stat-link">
+          <span class="stat-title">discord.gg/yukkis</span>
+          <span class="stat-label">over 60 deals, $2k logged</span>
+        </a>
+        <a href="https://discord.gg/loko" target="_blank" class="stat-card stat-link">
+          <span class="stat-title">discord.gg/loko</span>
+          <span class="stat-label">main server, $950 logged</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script type="module" src="/assets/js/app.js"></script>
+</body>
+</html>

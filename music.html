@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>music library</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body data-barba="wrapper">
+
+  <nav class="chapters">
+    <a href="/">Home</a>
+    <a href="/projects.html">Projects</a>
+    <a href="/about.html">About</a>
+    <a href="/summary.html">Summary</a>
+    <a href="/quotes.html">Quotes</a>
+    <a href="/sales.html">Sales</a>
+    <a href="/music.html">Music</a>
+  </nav>
+  
+<main data-barba="container" data-barba-namespace="music">
+  <section class="music-wrapper">
+    <h1 class="fx-text">music store</h1>
+    <p class="music-desc">
+      a assorted selection of music that i like (not categorized (yet))
+    </p>
+
+    <div class="music-library">
+      <div class="song-item" data-src="/assets/music/THESTARSAREFALLING.mp3" data-cover="/assets/media/maumakanapa.gif">
+        <img src="/assets/media/maumakanapa.gif" alt="the stars are falling cover" loading="lazy">
+        <div class="song-info">
+          <strong>THE STARS ARE FALLING</strong>
+          <span>LABIRHIN</span>
+        </div>
+      </div>
+
+      <div class="song-item" data-src="/assets/music/Shake.mp3" data-cover="/assets/media/shake.jpg">
+        <img src="/assets/media/shake.jpg" alt="ishowspeed shake cover" loading="lazy">
+        <div class="song-info">
+          <strong>Shake</strong>
+          <span>IShowSpeed</span>
+        </div>
+      </div>
+      
+            <div class="song-item" data-src="/assets/music/placeholder.mp3" data-cover="/assets/media/placeholder.png">
+        <img src="/assets/media/placeholder.png" alt="placeholder" loading="lazy">
+        <div class="song-info">
+          <strong>more coming soon!</strong>
+          <span>- LokoBurrito</span>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  <div class="player-bar">
+    <div class="current-song">
+      <img id="current-cover" src="/assets/media/placeholder.png" alt="Current cover">
+      <div class="current-info">
+        <strong id="current-title">Select a song</strong>
+        <span id="current-artist"></span>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="prev-btn">⏮</button>
+      <button id="rewind-btn">⏪</button>
+      <button id="play-pause-btn">▶</button>
+      <button id="forward-btn">⏩</button>
+      <button id="next-btn">⏭</button>
+    </div>
+
+    <div class="progress-container">
+      <span id="current-time">0:00</span>
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+      <span id="duration">0:00</span>
+    </div>
+  </div>
+
+  <audio id="audioPlayer" preload="auto"></audio>
+</main>
+
+</body>
+<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/@barba/core"></script>
+<script type="module" src="/assets/js/app.js"></script>
+</html>
